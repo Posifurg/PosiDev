@@ -43,6 +43,19 @@ a {
 <body>
 	<h1>Test Area<h1>
     <p>Sorry, but this is a testing area! You may see some unusual things here.</p>
+    <p>--- Chat Testing ---</p>
+    <script>
+	fetch('https://posifurg.dev/chat')
+	.then(response => response.text())
+	.then(data => {
+	document.getElementById('textContainer').innerHTML = '<p>' + data + '</p>';
+    })
+    .catch(error => {
+      console.error('Could not fetch chat! Error:', error);
+      document.getElementById('textContainer').innerHTML = '<p>Failed to load chat.</p>';
+    });
+</script>
+    <p></p>
     <a style="color: cyan;" href="https://posifurg.dev">Go back home<br></a>
 </body>
 </html>
