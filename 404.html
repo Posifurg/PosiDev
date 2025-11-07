@@ -2,49 +2,49 @@
 <html>
 <head>
   <title>Whoops! Error 404</title>
-  <meta property="og:title" content="Oops, invalid link!" />
+  <meta property="og:title" content="Bad URL!" />
   <meta property="og:description" content="This link doesnt look valid. Check it again for any errors." />
   <meta property="og:type" content="website" />
 <style>
 @font-face {
         font-family: "Audiowide";
-        src: url("https://posifurg.dev/assets/fonts/Audiowide.ttf") format("truetype");
+        src: url("/assets/fonts/Audiowide.ttf") format("truetype");
 }
 body {
-  background-image: linear-gradient(to bottom right, #000000, #343434);
+  background-image: url("/assets/backgrounds/404.png");
   background-repeat: no-repeat;
-  background-attachment: fixed; 
-  background-size: 100% 100%;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  background-color: #220022;
+  min-height: 100vh;
+  text-align: center;
 }
 h1 {
-	color: yellow;
-    text-align: center;
+	color: orange;
     font-family: Audiowide;
-    verticle-align: text-top;
+    vertical-align: text-top;
     top: 35%;
     font-size: 35px;
 }
 p {
 	color: white;
-    text-align: center;
-    font-family: verdana;
-    verticle-align: text-top;
+    font-family: Audiowide;
+    vertical-align: text-top;
     font-size: 20px;
 }
 a {
-    text-align: center;
-    font-family: verdana;
-    verticle-align: text-bottom;
+	color: cyan;
+    font-family: Audiowide;
+    vertical-align: text-top;
     font-size: 20px;
 }
 </style>
 </head>
 <body>
-	<h1>Oops! Error 404...<h1>
-    <p>Doesn't look like I can find what you're looking for.</p>
-    <p>If you're trying to go into a sub-area, like Games, you need to do that in the main website.</p>
-    <p>But if your tring to see the Website Assets, the URL is "https://posifurg.dev/assets"</p>
-    <a style="color: cyan;" href="https://posifurg.dev">Go back home<br></a>
-    <a style="color: lime;" href="https://posifurg.dev/assets">Look at assets</a>
+	<h1>Hmm...</h1>
+    <p>Error 404. What you're trying to look for isn't here!</p>
+    <p>Check for any typos in the URL. If there are none, the page may simply not exist yet.</p>
+    <a href="https://posifurg.dev">Go back home</a>
 </body>
 </html>
